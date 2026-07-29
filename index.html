@@ -3187,40 +3187,15 @@ body::after{
   background-size:cover;
   background-position:center;
 }
-.podcastFeature{
-  isolation:isolate;
-}
-
-.podcastFeature .photoShade{
+ 
+.photoShade{
+  display:none !important;
   position:absolute;
-  top:-2px;
-  right:-2px;
-  bottom:-2px;
-  left:-2px;
-  width:auto;
-  height:auto;
-  border-radius:inherit;
+  inset:0;
   pointer-events:none;
-  z-index:0;
-
   background:
-    linear-gradient(
-      180deg,
-      rgba(4,10,20,.08) 0%,
-      rgba(4,10,20,.34) 42%,
-      rgba(4,10,20,.92) 100%
-    ),
-    radial-gradient(
-      circle at 82% 20%,
-      rgba(124,107,255,.24),
-      transparent 38%
-    );
-}
-
-.podcastFeature .podcastTop,
-.podcastFeature .podcastContent{
-  position:relative;
-  z-index:2;
+    linear-gradient(180deg,rgba(4,10,20,.05),rgba(4,10,20,.88)),
+    radial-gradient(circle at 82% 20%,rgba(124,107,255,.24),transparent 33%);
 }
  
 .podcastFeature{
