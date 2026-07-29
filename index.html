@@ -3936,18 +3936,18 @@ html.isLoading body{
   font-weight:850 !important;
 }
 
- /* 修正 Dark Mode 的 Podcast 及其他相片卡片 */
-html[data-theme="dark"] .photoPanel{
-  background-color:#172033;
+/* Dark Mode：保持 Podcast 圖片正常顯示 */
+html[data-theme="dark"] .podcastFeature.photoPanel{
+  background-color:#172033 !important;
   background-image:
     linear-gradient(
       135deg,
-      rgba(8,17,31,.24),
-      rgba(8,17,31,.82)
+      rgba(8,17,31,.08),
+      rgba(8,17,31,.38)
     ),
     var(--panel-photo) !important;
   background-size:cover !important;
-  background-position:var(--photo-position, center) !important;
+  background-position:center !important;
   background-repeat:no-repeat !important;
 }
  
