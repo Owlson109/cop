@@ -3936,6 +3936,21 @@ html.isLoading body{
   font-weight:850 !important;
 }
 
+ /* 修正 Dark Mode 的 Podcast 及其他相片卡片 */
+html[data-theme="dark"] .photoPanel{
+  background-color:#172033;
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(8,17,31,.24),
+      rgba(8,17,31,.82)
+    ),
+    var(--panel-photo) !important;
+  background-size:cover !important;
+  background-position:var(--photo-position, center) !important;
+  background-repeat:no-repeat !important;
+}
+ 
 </style>
 <script id="loading-state-init">
 document.documentElement.classList.add('is-loading');
